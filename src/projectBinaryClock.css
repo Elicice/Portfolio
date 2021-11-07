@@ -1,0 +1,12 @@
+
+.presentContent{
+    flex-wrap: initial;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    max-width: 60%;
+}
+
+.clock{
+    align-self: center;
+}

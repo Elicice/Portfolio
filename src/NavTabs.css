@@ -1,0 +1,15 @@
+.navigationTabs.MuiTab-textColorPrimary{
+    color: white;
+}
+
+.navigationTabs.Mui-selected.MuiTab-textColorPrimary{
+    color:rgb(255, 157, 0);
+}
+
+.navigationTabs.MuiTab-textColorSecondary{
+    color:rgb(255, 157, 0);
+}
+
+.MenuTabs .MuiTabs-indicator{
+    background-color: rgb(255, 157, 0);
+}
