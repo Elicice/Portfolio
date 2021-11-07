@@ -61,7 +61,9 @@ export default function TopNav() {
           <LinkedInIcon />
           </IconButton>
           <IconButton
+            target="_blank"
             size="large"
+            href="https://github.com/Elicice"
             aria-label="GitHub profil"
             edge="end"
             color="inherit"
