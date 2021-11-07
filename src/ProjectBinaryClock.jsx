@@ -18,7 +18,7 @@ function ProjectBinaryClock(){
                 </h3>
                 <section>
                     This binary clock is made with React.js. 
-                    The source code can be accessed at GitHub.
+                    The source code can be accessed at <a href="https://github.com/Elicice/Portfolio/tree/main/src/projects/klokke-app">GitHub</a>.
 
                 </section>
                 <h3>
