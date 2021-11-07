@@ -28,7 +28,7 @@ export default function Projects() {
       </CardContent>
       <CardActions>
         <Button size="small" href="/#/Projects/BinaryClock">Demo</Button>
-        <Button size="small" href="https://vg.no">Source</Button>
+        <Button size="small" href="https://github.com/Elicice/Portfolio/tree/main/src/projects/klokke-app">Source</Button>
       </CardActions>
     </Card>
   );
