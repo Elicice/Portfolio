@@ -64,7 +64,7 @@ export default function TopNav() {
             target="_blank"
             size="large"
             href="https://github.com/Elicice"
-            aria-label="GitHub profil"
+            aria-label="GitHub profile"
             edge="end"
             color="inherit"
           >
