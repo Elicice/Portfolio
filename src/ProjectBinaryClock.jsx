@@ -30,7 +30,7 @@ function ProjectBinaryClock(){
                      
                 </section>
                 <section>
-                    <img src="./BinaryClockExplainedDetails.png" alt="Binary clock..." />
+                    <img src="./BinaryClockExplainedDetails.png" alt="Binary clock..." className="clockExplained"/>
                 </section>
                 <section>
                     The bottom row is the 1 placeholder, the next 2, then 4, and the top row is 8 placeholder. Blue indicates active placeholder. 
