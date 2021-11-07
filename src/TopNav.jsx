@@ -44,13 +44,10 @@ export default function TopNav() {
           >
           <TemporaryDrawer />
           </IconButton>
-          <Typography
-            variant="h5"
-            noWrap
-            component="div"
+          <Box
             sx={{ flexGrow: 1, alignSelf: 'flex-end' }}
           >
-          </Typography>
+          </Box>
           <IconButton 
             target="_blank" 
             href="https://www.linkedin.com/in/CecilieLyshoel" 
