@@ -7,7 +7,8 @@ function BinaryClock(props){
     let [now, setState] = useState(new Date());
     let nowHour = now.getHours().toString().padStart(2).split("");
     let nowMinute = now.getMinutes().toString().padStart(2).split("");
-    let nowSecond = now.getSeconds().toString().padStart(2).split(""); 
+    let nowSecond = now.getSeconds().toString().padStart(2).split("");
+    let nowTime = now.toLocaleTimeString();
 
     React.useEffect(() =>{
         setInterval(() => {
@@ -17,7 +18,7 @@ function BinaryClock(props){
   
     return (
         <div>
-            <div className="Time-Teller-Backgorund">   
+            <div className="Time-Teller-Backgorund" aria-label={`The time is ${nowTime}`}>   
                 <CircleStack value={nowHour[0]} />
                 
                 <CircleStack value={nowHour[1]} />
