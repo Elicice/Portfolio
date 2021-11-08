@@ -1,3 +1,8 @@
+/**
+ *Takes number between 0-9 and converts to binary number. 
+ *Uses a BinaryCircle and stacks 4 blue or transparent circles according to the binary number
+ */
+
 import BinaryCircle from "./BinaryCircle";
 
 function CircleStack(props){

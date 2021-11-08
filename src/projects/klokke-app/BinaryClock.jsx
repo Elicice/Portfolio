@@ -1,9 +1,13 @@
+/**
+ * Uses current date time to produce a binary clock
+ */
+
 import CircleStack from "./CircleStack";
 import React from "react";
 import { useState } from 'react';
 import style from "./BinaryClock.css";
 
-function BinaryClock(props){
+function BinaryClock(){
     let [now, setState] = useState(new Date());
     let nowHour = now.getHours().toString().padStart(2).split("");
     let nowMinute = now.getMinutes().toString().padStart(2).split("");
