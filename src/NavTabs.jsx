@@ -19,7 +19,6 @@ export default function NavTabs() {
   let match = useLocation();
   
   const [value, setValue] = React.useState(() => {
-    console.log(match);
 
     if (match.pathname.startsWith("/Project"))
       return 1;
