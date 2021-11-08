@@ -1,0 +1,20 @@
+.imageHome{
+ width: 310px;
+}
+
+@media only screen and (max-width: 600px){
+    .imageHome{
+        width: 250px;
+    }
+}
+
+.sectionmrl{
+    padding: 0px 100px 0px 100px;
+    
+}
+
+@media only screen and (max-width: 600px){
+    .sectionmrl{
+        padding: 0px 10px 0px 10px;
+    }
+}
