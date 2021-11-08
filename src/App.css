@@ -39,6 +39,9 @@ section a:visited{
 section a:hover{
   color:rgb(238, 135, 238);
 }
+section{
+  margin-bottom: 15px;
+}
 
 
 
