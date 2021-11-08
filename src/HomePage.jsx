@@ -12,10 +12,11 @@ export default function HomePage() {
         marginTop: '20px',
         display: 'flex',
         flexWrap: 'wrap',
+        maxWidth: '960px',
         flexShrink:'1',
         '& > :not(style)': {
           m: 1,
-          height: '85vh',
+          
           width: '100%',
           alignItems: 'center',
           padding: '10px',
