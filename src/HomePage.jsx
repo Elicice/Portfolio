@@ -16,7 +16,6 @@ export default function HomePage() {
         flexShrink:'1',
         '& > :not(style)': {
           m: 1,
-          
           width: '100%',
           alignItems: 'center',
           padding: '10px',
