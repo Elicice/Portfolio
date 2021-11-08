@@ -1,4 +1,3 @@
-import { Article } from "@mui/icons-material";
 import HomePage from "./HomePage";
 import StickyFooter from "./StickyFooter";
 import ProjectBinaryClock from "./ProjectBinaryClock";
