@@ -6,7 +6,7 @@ function ProjectBinaryClock(){
     return(
         <div className="presentContent">
             <div >
-                <h2>Binary Clock</h2>
+                <h1>Binary Clock</h1>
             </div>
             <div className="clock">
                 <BinaryClock />
