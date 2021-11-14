@@ -12,6 +12,7 @@ export default function Projects() {
   return (
     
     <><h1>Projects</h1>
+
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -31,6 +32,31 @@ export default function Projects() {
         <Button size="small" href="/#/Projects/BinaryClock">Demo</Button>
         <Button size="small" href="https://github.com/Elicice/Portfolio/tree/main/src/projects/klokke-app">Source</Button>
       </CardActions>
-    </Card></>
+    </Card>
+    
+    <Card sx={{ maxWidth: 345, marginTop:'25px'}}>
+      <CardMedia
+        component="img"
+        alt="Weather app preview"
+        height="140"
+        image="./weatherapp.png" />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Weather App
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Tells the weather and how to dress
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" href="/#/Projects/WeatherApp">Demo</Button>
+        <Button size="small" href="https://github.com/Elicice/Portfolio/tree/main/src/projects/V%C3%A6rkl%C3%A6r-app">Source</Button>
+      </CardActions>
+    </Card>
+    
+    
+    </>
+
+    
   );
 }
