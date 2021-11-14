@@ -37,7 +37,6 @@ function WebSite() {
                     <Route path="/">
                         <HomePage />
                     </Route>
-                
                 </Switch>
                 </div>
             </Grid>
