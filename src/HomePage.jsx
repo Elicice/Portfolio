@@ -43,7 +43,7 @@ export default function HomePage() {
                 Learning, being creative, and working with technology are some things I enjoy doing. 
               </section>
               <section className="sectionmrl">
-                <img src="/./kaffebønner hjerte crop.jpg" alt="Kaffebønner i form som et hjerte" className="imageHome"/>
+                <img src="/./kaffebønner hjerte crop.jpg" alt="Coffee beans layed out as the shape of a heart" className="imageHome"/>
               </section>
             
      </Paper>
