@@ -39,7 +39,7 @@ export default function Projects() {
         component="img"
         alt="Weather app preview"
         height="140"
-        image="./weatherapp.png" />
+        image="./Weatherapp.png" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           Weather App
