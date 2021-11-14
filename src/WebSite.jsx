@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Projects from "./Projects";
 import WeatherApp from "./projects/Værklær-app/WeatherApp";
+import { Grid } from "@mui/material";
 
 
 
@@ -18,7 +19,11 @@ function WebSite() {
     return (
         <div className="website">
             <TopNav />
-            <section className="content">
+            <Grid className="content"   container
+                 direction="row"
+                justifyContent="center"
+                alignItems="flex-start" >
+                <div>
                 <Switch>
                     <Route path="/Projects/WeatherApp">
                         <WeatherApp />
@@ -34,7 +39,8 @@ function WebSite() {
                     </Route>
                 
                 </Switch>
-            </section>
+                </div>
+            </Grid>
             
             <StickyFooter />
         </div>

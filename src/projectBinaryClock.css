@@ -5,6 +5,7 @@
     flex-shrink: 2;
     display: flex;
     align-content: center;
+    margin: 0 auto;
     max-width: 60%;
 }
 
