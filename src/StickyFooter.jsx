@@ -8,7 +8,7 @@ import { blue, green } from '@mui/material/colors';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary">
+    <Typography variant="body2" color="text.white" fontSize="19px">
       {'Copyright © '}
       <Link color="inherit" href="https://cecilie.lyshoel.no">
         Cecilie Lyshoel
@@ -27,11 +27,11 @@ export default function StickyFooter() {
           py: 3,
           px: 2,
           mt: 'auto',
-          backgroundColor: "gray"
+          backgroundColor: "#200119"
         }}
       >
         <Container maxWidth="sm">
-          <Typography variant="body1">
+          <Typography variant="body1" fontSize="19px">
             Thank you for visiting!
           </Typography>
           <Copyright />
