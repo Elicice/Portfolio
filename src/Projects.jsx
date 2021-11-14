@@ -16,7 +16,7 @@ export default function Projects() {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        alt="Binary clock"
+        alt="Binary clock preview"
         height="140"
         image="./BinaryClock.png" />
       <CardContent>
