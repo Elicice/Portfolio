@@ -3,12 +3,14 @@ import StickyFooter from "./StickyFooter";
 import ProjectBinaryClock from "./ProjectBinaryClock";
 import TopNav from "./TopNav";
 import './WebSite.css';
+
 import {
     Switch,
     Route,
     Link
 } from "react-router-dom";
 import Projects from "./Projects";
+import WeatherApp from "./projects/Værklær-app/WeatherApp";
 
 
 
@@ -16,9 +18,11 @@ function WebSite() {
     return (
         <div className="website">
             <TopNav />
-            <header className="header">
-
+            <section className="content">
                 <Switch>
+                    <Route path="/Projects/WeatherApp">
+                        <WeatherApp />
+                    </Route>
                     <Route path="/Projects/BinaryClock">
                         <ProjectBinaryClock />
                     </Route>
@@ -28,9 +32,10 @@ function WebSite() {
                     <Route path="/">
                         <HomePage />
                     </Route>
+                
                 </Switch>
-
-            </header>
+            </section>
+            
             <StickyFooter />
         </div>
     );

@@ -1,15 +1,10 @@
-.header{
-    background-color: #2d272f;
+.content{
     min-height:100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: top;
-    font-size: calc(10px + 2vmin);
-    color: white;
     margin-top: 40px;
 }
 .website{
     text-align: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
 }
