@@ -9,7 +9,7 @@ export default function HomePage() {
     <Box
       sx={{
         width: '85%',
-        marginTop: '20px',
+        margin: '20px auto',
         display: 'flex',
         flexWrap: 'wrap',
         maxWidth: '960px',
