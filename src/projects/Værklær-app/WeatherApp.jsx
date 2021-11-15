@@ -14,7 +14,6 @@ function WeatherApp(){
     let responce = await fetch("https://api.met.no/weatherapi/locationforecast/2.0/complete.json?lat=60.397076&lon=5.324383");
     let y = await responce.json();
     setWeatherData(y);
-    console.log(y);
     }, [] );
   
     if(weatherData){
@@ -155,12 +154,15 @@ function WeatherApp(){
                 <div className="suggestions" >
                     <section>
                     It is {weatherData.properties.timeseries[0].data.instant.details.air_temperature}&deg;C outside and it's expected a precipitation between {weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min}-{weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_max}mm the next hour.
-                    The windspeed is {weatherData.properties.timeseries[0].data.instant.details.wind_speed}m/s.
+                    The windspeed is {weatherData.properties.timeseries[0].data.instant.details.wind_speed}m/s with gusts up to {weatherData.properties.timeseries[0].data.instant.details.wind_speed_of_gust}m/s.
                     </section>
                     <section>
                     {suggestion}
                     </section>
                 </div>
+                <section>
+                    This waether app uses data from the yr API, and was last updated {weatherData.properties.meta.updated_at}.
+                </section>
 
 
             </>
