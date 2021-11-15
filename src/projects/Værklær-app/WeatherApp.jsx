@@ -91,6 +91,10 @@ function WeatherApp(){
         weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min == 0){
             weatherClothes = "WeatherApp/Weather-body-light-jacket-and-jeans.png";
         }
+        else if(weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min >0 &&
+            weatherData.properties.timeseries[0].data.instant.details.air_temperature >7){
+                weatherClothes = "WeatherApp/Weather-body-rain-jacket.png";
+             }
         else{
             weatherClothes = "WeatherApp/Weather-body-light-jacket-and-jeans.png";
         } 
@@ -129,9 +133,8 @@ function WeatherApp(){
         else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans-with-umbrella')){
             suggestion = "Please put on some thousers, a light jacket and wear comfortable shoes. And bring an umbrella.";
         }
-
         else{
-            suggestion ="...dress however you want...";
+            suggestion ="Can't compute ...You probably should stay home if can...";
         }
 
 
@@ -163,7 +166,6 @@ function WeatherApp(){
                 <section>
                     This weather app uses data from the yr API, and was last updated {weatherData.properties.meta.updated_at}.
                 </section>
-
 
             </>
             
