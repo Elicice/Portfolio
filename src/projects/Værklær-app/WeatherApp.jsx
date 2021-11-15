@@ -161,7 +161,7 @@ function WeatherApp(){
                     </section>
                 </div>
                 <section>
-                    This waether app uses data from the yr API, and was last updated {weatherData.properties.meta.updated_at}.
+                    This weather app uses data from the yr API, and was last updated {weatherData.properties.meta.updated_at}.
                 </section>
 
 
