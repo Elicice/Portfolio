@@ -50,7 +50,7 @@
 
 .FigureOverlayWrap .person{
     position: absolute;
-    top: 140px;
+    top: 160px;
     left: 140px;
     width: 330px;
     height: 330px;
@@ -130,7 +130,7 @@
     
     .FigureOverlayWrap .person{
         position: absolute;
-        top: 90px;
+        top: 110px;
         left: 85px;
         width: 175px;
         height: 175px;
