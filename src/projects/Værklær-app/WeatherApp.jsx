@@ -83,7 +83,7 @@ function WeatherApp(){
             weatherClothes = "WeatherApp/Weather-body-light-clothes.png";
         }
         else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >6 && 
-        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min >0){
+        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_max >0){
                 weatherClothes = "WeatherApp/Weather-body-light-jacket-and-jeans-with-umbrella.png";
             }
         else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >6){
