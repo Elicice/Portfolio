@@ -53,6 +53,26 @@ export default function Projects() {
         <Button size="small" href="https://github.com/Elicice/Portfolio/tree/main/src/projects/V%C3%A6rkl%C3%A6r-app">Source</Button>
       </CardActions>
     </Card>
+
+    <Card sx={{ maxWidth: 345, marginTop:'25px'}}>
+      <CardMedia
+        component="img"
+        alt="alarmclock and smarties"
+        height="140"
+        image="sweetafternoon.jpg" />
+      <CardContent color="">
+        <Typography gutterBottom variant="h5" component="div">
+          Time Management App
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Helps you keep track on your time when learning something new. 
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button disabled size="small" href="/#/Projects/" >Demo</Button>
+        <Button  disabled size="small" href="/#/Projects/" >Source</Button>
+      </CardActions>
+    </Card>
     
     
     </>
