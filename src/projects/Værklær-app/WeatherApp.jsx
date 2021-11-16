@@ -65,34 +65,32 @@ function WeatherApp(){
       
 
        //illustrating the clothing
-       if(weatherData.properties.timeseries[0].data.instant.details.air_temperature <=7 ||
-        (weatherIcon.includes('snow')||weatherIcon.includes('sleet')||weatherIcon.includes('thunder'))){
+       if(weatherData.properties.timeseries[0].data.instant.details.air_temperature <=6 ||
+        (weatherIcon.includes('snow')||weatherIcon.includes('sleet'))){
             weatherClothes = "WeatherApp/Weather-body-warm-clothes.png";
        }
         else if((weatherIcon.includes('thunder')|| weatherIcon.includes('heavy')) && 
-        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min >0 &&
+        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_max >0 &&
         weatherData.properties.timeseries[0].data.instant.details.wind_speed_of_gust>=15){
             weatherClothes = "WeatherApp/Weather-body-rain-jacket.png";
          }
         
         else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >=17 && 
-        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min >0){
+        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_max >0){
                 weatherClothes = "WeatherApp/Weather-body-light-clothes-with-umbrella.png";
             }
-        else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >=17 && 
-        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min ==0){
+        else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >=17){
             weatherClothes = "WeatherApp/Weather-body-light-clothes.png";
         }
-        else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >=10 && 
+        else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >6 && 
         weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min >0){
                 weatherClothes = "WeatherApp/Weather-body-light-jacket-and-jeans-with-umbrella.png";
             }
-        else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >=10 && 
-        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min == 0){
+        else if(weatherData.properties.timeseries[0].data.instant.details.air_temperature >6){
             weatherClothes = "WeatherApp/Weather-body-light-jacket-and-jeans.png";
         }
-        else if(weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_min >0 &&
-            weatherData.properties.timeseries[0].data.instant.details.air_temperature >7){
+        else if(weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_max >0 &&
+            weatherData.properties.timeseries[0].data.instant.details.air_temperature >6){
                 weatherClothes = "WeatherApp/Weather-body-rain-jacket.png";
              }
         else{
@@ -110,6 +108,11 @@ function WeatherApp(){
         weatherData.properties.timeseries[0].data.instant.details.air_temperature >0 ){
             suggestion = "Please put on some warm clothes before leaving the house.";
         }
+        else if(weatherClothes.includes('WeatherApp/Weather-body-warm-clothes') && 
+        weatherData.properties.timeseries[0].data.next_1_hours.details.precipitation_amount_max >0 &&
+        weatherData.properties.timeseries[0].data.instant.details.air_temperature >0){
+            suggestion = "Please put on some warm clothes before leaving the house. And bring an umbrella.";
+        }
         else if (weatherClothes.includes('WeatherApp/Weather-body-rain-jacket') && (weatherIcon.includes('thunder')||
         weatherData.properties.timeseries[0].data.instant.details.wind_speed_of_gust>=15)){
             suggestion ="Please put on a rain coat and some waterproof shoes before leaving the house. And don't even think about bringing an umbrella.";
@@ -119,15 +122,18 @@ function WeatherApp(){
         }
         else if (weatherClothes.includes('WeatherApp/Weather-body-light-clothes') && 
         (weatherIcon.includes('clearsky_day')||weatherIcon.includes('fair_day')||weatherIcon.includes('partlycloudy_day'))){
-            suggestion = "Please put on some light clothes and sandals. And use sun lotion 30-50SPF.";
+            suggestion = "Please put on some light clothes and sandals. And use sunglasses and sun lotion 30-50 SPF.";
         }
         else if (weatherClothes.includes('WeatherApp/Weather-body-light-clothes')){
             suggestion = "Please put on some light clothes and light shoes.";
         }
         else if(weatherClothes.includes('WeatherApp/Weather-body-light-clothes-with-umbrella')){
-        suggestion = "Please put on some light clothes and light shoes. And bring an umbrella";
+        suggestion = "Please put on some light clothes and light shoes. And bring an umbrella.";
         }
-        else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans"')){
+        else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans')&& weatherData.properties.timeseries[0].data.instant.details.air_temperature<=10){
+            suggestion = "Please put on some thousers, jacket with a jumper underneath and wear comfortable shoes.";
+        }
+        else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans')){
             suggestion = "Please put on some thousers, a light jacket and wear comfortable shoes.";
         }
         else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans-with-umbrella')){
