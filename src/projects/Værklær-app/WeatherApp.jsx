@@ -130,15 +130,16 @@ function WeatherApp(){
         else if(weatherClothes.includes('WeatherApp/Weather-body-light-clothes-with-umbrella')){
         suggestion = "Please put on some light clothes and light shoes. And bring an umbrella.";
         }
+        else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans-with-umbrella')){
+            suggestion = "Please put on some thousers, a light jacket and wear comfortable shoes. And bring an umbrella.";
+        }
         else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans')&& weatherData.properties.timeseries[0].data.instant.details.air_temperature<=10){
             suggestion = "Please put on some thousers, jacket with a jumper underneath and wear comfortable shoes.";
         }
         else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans')){
             suggestion = "Please put on some thousers, a light jacket and wear comfortable shoes.";
         }
-        else if(weatherClothes.includes('WeatherApp/Weather-body-light-jacket-and-jeans-with-umbrella')){
-            suggestion = "Please put on some thousers, a light jacket and wear comfortable shoes. And bring an umbrella.";
-        }
+        
         else{
             suggestion ="Can't compute ...You probably should stay home if can...";
         }
