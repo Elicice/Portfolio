@@ -36,12 +36,10 @@ export default function HomePage() {
                 <img src="/./kaffekopp 4 crop.jpg" alt="Cup of coffee on stacked books, next to a rainy window." className="imageHome" />
               </section>
               <section className="sectionmrl">
-                I am a University of Bergen alumni with degrees in education and information science.
+                RPA developer with a few hobby projects on the side.
               </section>
               
-              <section className="sectionmrl">
-                Learning, being creative, and working with technology are some things I enjoy doing. 
-              </section>
+              
               <section className="sectionmrl">
                 <img src="/./kaffebønner hjerte crop.jpg" alt="Coffee beans layed out as the shape of a heart" className="imageHome"/>
               </section>

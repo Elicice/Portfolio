@@ -57,7 +57,7 @@ export default function Projects() {
     <Card sx={{ maxWidth: 345, marginTop:'25px'}}>
       <CardMedia
         component="img"
-        alt="alarmclock and smarties"
+        alt="Alarm clock and smarties"
         height="140"
         image="sweetafternoon.jpg" />
       <CardContent color="">
@@ -72,7 +72,7 @@ export default function Projects() {
         <Button disabled size="small" href="/#/Projects/" >Demo</Button>
         <Button  disabled size="small" href="/#/Projects/" >Source</Button>
       </CardActions>
-    </Card>
+    </Card>3
     
     
     </>
