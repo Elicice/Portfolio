@@ -72,7 +72,7 @@ export default function Projects() {
         <Button disabled size="small" href="/#/Projects/" >Demo</Button>
         <Button  disabled size="small" href="/#/Projects/" >Source</Button>
       </CardActions>
-    </Card>3
+    </Card>
     
     
     </>
